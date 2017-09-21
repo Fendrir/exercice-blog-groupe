@@ -4,19 +4,20 @@
 <nav class="navbar navbar-inverse bg-faded">
   <div class="container-fluid">
     <div class="navbar-header">
-      <a class="navbar-brand" href="#">Mon super site</a>
+      <a class="navbar-brand">Mon super site</a>
     </div>
     <ul class="nav navbar-nav">
       <li class="active"><a href="?p=home">Home</a></li>
       <li><a href="?p=admin">Administrator dashboard</a></li>
       <li><a href="?p=new_article">New article</a></li>
+      <li><a href="?p=login">Login</a></li>
     </ul>
 
                 <!-- partie recherche avec le menu déroulant -->
 
     <ul class="nav navbar-nav navbar-right">
     
-    <form class="navbar-form" method="GET" action="pages/recherche.php">
+    <form class="navbar-form form-inline" method="GET" action="pages/recherche.php">
 
     <div class="dropdown form-group">
       <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
@@ -79,9 +80,9 @@
                     <!-- Bouton de recherche -->
     
       <div class="form-group">
-        <input type="text" class="form-control" placeholder="Search" name="recherche_nav">
+        <input type="text" class="form-control mr-sm-2" placeholder="Search" name="recherche_nav">
       </div>
-      <button type="submit" class="btn btn-default">Submit</button>
+      <button type="submit" class="btn btn-success my-2 my-sm-0">Submit</button>
     </form>
     </ul>
   </div>
