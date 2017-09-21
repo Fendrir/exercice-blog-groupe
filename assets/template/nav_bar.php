@@ -10,13 +10,13 @@
       <li class="active"><a href="?p=home">Home</a></li>
       <li><a href="?p=admin">Administrator dashboard</a></li>
       <li><a href="?p=new_article">New article</a></li>
-      <li><a href="?p=login">Login</a></li>
+      <!-- <li><a href="?p=login">Login</a></li> -->
     </ul>
 
                 <!-- partie recherche avec le menu déroulant -->
 
     <ul class="nav navbar-nav navbar-right">
-    
+      
     <form class="navbar-form form-inline" method="GET" action="pages/recherche.php">
 
     <div class="dropdown form-group">
@@ -80,10 +80,18 @@
                     <!-- Bouton de recherche -->
     
       <div class="form-group">
-        <input type="text" class="form-control mr-sm-2" placeholder="Search" name="recherche_nav">
+        <input type="text" class="form-control" placeholder="Search" name="recherche_nav">
       </div>
-      <button type="submit" class="btn btn-success my-2 my-sm-0">Submit</button>
+      <button type="submit" class="btn btn-success">Submit</button>
     </form>
     </ul>
+
+    <ul class="nav navbar-nav navbar-right" >
+    
+      <li id="disconnect" class="hide" ><a href="?p=disconnect">disconnect</a></li>
+      <li><a href="?p=login">Login</a></li>
+    
+    </ul>
+
   </div>
 </nav>
