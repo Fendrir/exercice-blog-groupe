@@ -1,4 +1,16 @@
 <?php 
+session_start();
+if (isset($_SESSION['identifier'])){
+    if ($_SESSION['identifier']){
+        echo "Bonjour, vous êtes connecté en tant que : ".$_SESSION['identifier'];
+    }
+}else{
+    // header("Location: ?p=connexion");
+};
+
+include("database/connexion-bdd.php");
+
+
 if(isset($_GET['p'])){
     $p = $_GET['p'];
 }else{
