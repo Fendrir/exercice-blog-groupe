@@ -21,7 +21,7 @@
     <ul class="nav navbar-nav">
       <li class="active"><a href="?p=home">Home</a></li>
       <li><a href="?p=admin">Administrator dashboard</a></li>
-      <li><a href="?p=new_article">New article</a></li>
+      <li><a href="?p=ajout-article">New article</a></li>
       <!-- <li><a href="?p=login">Login</a></li> -->
     </ul>
 
