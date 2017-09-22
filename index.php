@@ -21,6 +21,8 @@ if($p === 'home'){
     include('pages/home.php');
 }if($p === 'admin'){
     include('pages/admin.php');
+}if($p === 'ajout-article'){
+    include('pages/ajout_article.php');
 }
 $content = ob_get_clean();
 include('assets/template/default.php');
