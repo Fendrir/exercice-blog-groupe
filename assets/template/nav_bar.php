@@ -89,7 +89,7 @@
     <ul class="nav navbar-nav navbar-right" >
     
       <li id="disconnect" class="hide" ><a href="?p=disconnect">disconnect</a></li>
-      <li><a href="?p=login">Login</a></li>
+      <li><a  data-toggle="modal" data-target="#connexion" href="#">Login</a></li>
     
     </ul>
 

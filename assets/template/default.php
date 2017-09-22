@@ -19,16 +19,21 @@
         ?>
     
     </header>
+    <div class="container">
     <?php include("modal_haut.php") ?>
         <form class="form-group">
+        <div class="row">
+        <div class="col-sm-8 col-sm-offset-2 col-xs-8 col-xs-offset-2">
             <label for="login">Login</label>
             <input class="form-control" id="login" type="text">
             <label for="password">Password</label>
             <input class="form-control" id="password" type="text">
+        </div>
+        </div>
         </form>
-    <?php include("modal_bas.php") ?>    
+<?php include("modal_bas.php") ?>    
     <?= $content ?>
-
+    </div>
     <!-- <script src="node_modules/jquery/dist/jquery.js"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     
