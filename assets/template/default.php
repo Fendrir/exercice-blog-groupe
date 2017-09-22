@@ -26,7 +26,10 @@
 
     <div class="container">
     <?php include("modal_haut.php") ?>
-        <form class="form-group">
+
+
+
+        <form class="form-group" method="post" action=''>
         <div class="row">
         <div class="col-sm-8 col-sm-offset-2 col-xs-8 col-xs-offset-2">
             <label for="login">Login</label>
@@ -36,8 +39,8 @@
 
         </div>
         </div>
-        </form>
     <?php include("modal_bas.php") ?>    
+        </form>
     
     <?php 
     

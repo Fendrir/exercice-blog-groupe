@@ -1,4 +1,16 @@
 
+<?php
+
+  $log= '<li><a  data-toggle="modal" data-target="#connexion" href="#">Login</a></li>';
+
+  if(!empty($_SESSION['identifier'])){
+
+    $log= '<li id="disconnect"><a href="?p=disconnect">disconnect</a></li>';
+
+  }
+
+?>
+
                                   <!-- Navbar sit web -->
 
 <nav class="navbar navbar-inverse bg-faded">
@@ -88,8 +100,7 @@
 
     <ul class="nav navbar-nav navbar-right" >
     
-      <li id="disconnect" class="hide" ><a href="?p=disconnect">disconnect</a></li>
-      <li><a  data-toggle="modal" data-target="#connexion" href="#">Login</a></li>
+      <?= $log ?>
     
     </ul>
 
