@@ -19,7 +19,14 @@
         ?>
     
     </header>
-
+    <?php include("modal_haut.php") ?>
+        <form class="form-group">
+            <label for="login">Login</label>
+            <input class="form-control" id="login" type="text">
+            <label for="password">Password</label>
+            <input class="form-control" id="password" type="text">
+        </form>
+    <?php include("modal_bas.php") ?>    
     <?= $content ?>
 
     <!-- <script src="node_modules/jquery/dist/jquery.js"></script> -->
