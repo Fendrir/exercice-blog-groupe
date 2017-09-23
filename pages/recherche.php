@@ -6,7 +6,7 @@ $recherche =$_GET["recherche_nav"];
 
 
 
-$sql = sprintf("SELECT * FROM article type 
+$sql = sprintf("SELECT * FROM article, type 
 WHERE article_title LIKE '%%%s%%' 
 OR type_name LIKE '%%%s%%'
 OR article_admin_id LIKE '%%%s%%'
