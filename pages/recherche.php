@@ -1,5 +1,7 @@
 <?php
 
+include("../database/connexion-bdd.php");
+
 $recherche =$_GET["recherche_nav"];
 
 
@@ -35,7 +37,7 @@ $users = $bdd->query($sql);
     <?= $data['type_name']." ". $data['article_title'] . " Fait le : " . $data['article_admin_id'] . " avec pour pseudo : " . $data['article_admin_id']?>
     
     </p>
-    
+
 	<br />
 
 	<?php 
