@@ -14,7 +14,7 @@
   <div class="form-group col-sm-4">
     <!-- input content -->
     <label for="content">contenu</label>
-    <textarea name="content" class="form-control" id="content" cols="30" rows="10">test</textarea>
+    <textarea name="content" class="form-control" id="content" cols="30" rows="10"></textarea>
   </div>
 </div>
 <div class="row">

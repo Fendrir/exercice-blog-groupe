@@ -21,6 +21,7 @@ try
 {
     $bdd->query($sql_ajout_article);
     echo "Article enregistré avec succès !";
+    ?><br><a href="../index.php"><button class="btn">retour a l'accueil du site</button></a> <?php
 }
 catch (Exception $e)
 {
