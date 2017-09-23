@@ -25,28 +25,33 @@
     ?>
 
     <div class="container">
-    <?php include("modal_haut.php") ?>
-
-
+    
+        <?php include("modal_haut.php") ?>
 
         <form class="form-group" method="post" action=''>
-        <div class="row">
-        <div class="col-sm-8 col-sm-offset-2 col-xs-8 col-xs-offset-2">
-            <label for="login">Login</label>
-            <input class="form-control" id="login" type="text" name="login">
-            <label for="password">Password</label>
-            <input class="form-control" id="password" type="password" name="password">
+            <div class="row">
+                <div class="col-sm-8 col-sm-offset-2 col-xs-8 col-xs-offset-2">
+                    <label for="login">Login</label>
+                    <input class="form-control" id="login" type="text" name="login">
+                    <label for="password">Password</label>
+                    <input class="form-control" id="password" type="password" name="password">
 
-        </div>
-        </div>
-    <?php include("modal_bas.php") ?>    
+                </div>
+            </div>
+
+            <?php include("modal_bas.php") ?>    
+
         </form>
+
     
     <?php 
-    
+
         }; 
 
     ?>
+    </div>
+
+    <div class="container">
 
         <?= $content ?>
 
