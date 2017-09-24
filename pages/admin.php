@@ -57,13 +57,13 @@
             </thead>
             <tbody>
             <?php 
-                $reponse = $bdd->query('SELECT * FROM article');
+                $reponse = $bdd->query('SELECT * FROM article INNER JOIN type ON article.article_type_id = type.type_id');
                 while ($donnees = $reponse->fetch()) 
                 {
             ?>
             <tr>
                 <td><?= $donnees["article_id"] ?></td>
-                <td><?= $donnees["article_title"] ?></td>
+                <td><?= $donnees["type_name"] ?></td>
                 <td><?= $donnees["article_content"] ?></td>
                 <td><a href=""><img src="https://cdn3.iconfinder.com/data/icons/glyph/227/Cancel-128.png" alt="editer" height="40" width="40"></a></td>
                 <td><a href=""><img src="https://image.freepik.com/free-icon/edit-badge_318-32366.jpg" alt="editer" height="40" width="40"></a></td>

@@ -1,6 +1,6 @@
 <?php
 include("../database/connexion-bdd.php");
-$author = (INT)$_POST["article_admin_id"];
+$author = (INT)$_POST["type"];
 $article_id = (INT)$_POST["article_admin_id"];
 $title= $_POST['title'];
 $content= $_POST['content'];
