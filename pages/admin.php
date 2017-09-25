@@ -51,8 +51,8 @@
                     <th class="col-sm-1">ID</th>
                     <th class="col-sm-1">Genre</th>
                     <th class="col-sm-8">Titre</th>
-                    <th class="col-sm-1">Editer</th>
                     <th class="col-sm-1">Supprimer</th>
+                    <th class="col-sm-1">Editer</th>
                 </tr>
             </thead>
             <tbody>
@@ -65,7 +65,30 @@
                 <td><?= $donnees["article_id"] ?></td>
                 <td><?= $donnees["type_name"] ?></td>
                 <td><?= $donnees["article_content"] ?></td>
-                <td><a href=""><img src="https://cdn3.iconfinder.com/data/icons/glyph/227/Cancel-128.png" alt="editer" height="40" width="40"></a></td>
+                <td><a href="#" data-toggle="modal" data-target="#Modal_sup_<?=$donnees['article_id'] ?>"><img src="https://cdn3.iconfinder.com/data/icons/glyph/227/Cancel-128.png" alt="editer" height="40" width="40"></a>
+                    <!-- Modal de confirmation de suppression -->
+                    <div id="Modal_sup_<?=$donnees['article_id'] ?>" class="modal fade" role="dialog">
+                    <div class="modal-dialog">
+                            <!-- Contenu du modal-->
+                            
+                            <div class="modal-content contenu_modal col-sm-6 col-sm-offset-2">
+                                <div class="modal-header">
+                                    <h4 class="modal-title text-center">Connexion</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <p><span class="gras">Attention voulez vous vraiment supprimer l'article : <?=$donnees['article_title'] ?> ?</span></p>
+                                </div>
+                                <div class="modal-footer">
+                                    <form action="?p=bdd-suppression-article" method="post">
+                                        <input class="hidden" name="suppr-article" value="<?=$donnees['article_id'] ?>">
+                                        <button type="button" class="btn btn-info" data-dismiss="modal">Annuler</button>
+                                        <button type="submit" class="btn btn-danger">Valider</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </td>
                 <td><a href=""><img src="https://image.freepik.com/free-icon/edit-badge_318-32366.jpg" alt="editer" height="40" width="40"></a></td>
             </tr>
             <?php 
