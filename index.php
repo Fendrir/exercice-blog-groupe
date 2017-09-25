@@ -29,7 +29,10 @@ if($p === 'home'){
     include('pages/destroy-session.php');
 }if($p === 'ajout-article'){
     include('pages/ajout_article.php');
+}if($p === 'bdd-suppression-article'){
+    include('traitement/bdd-suppression-article.php');
 }
 $content = ob_get_clean();
 include('assets/template/default.php');
 ?>
+
