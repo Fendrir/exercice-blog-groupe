@@ -2,10 +2,14 @@
 <?php
 
   $log= '<li><a  data-toggle="modal" data-target="#connexion" href="#">Login</a></li>';
+  $admin_dashboard_nav='';
+  $ajout_article_nav='';
 
   if(!empty($_SESSION['identifier'])){
 
     $log= '<li id="disconnect"><a href="?p=disconnect">disconnect</a></li>';
+    $admin_dashboard_nav='<li><a href="?p=admin">Administrator dashboard</a></li>';
+    $ajout_article_nav='<li><a href="?p=ajout-article">New article</a></li>';
 
   }
 
@@ -20,8 +24,10 @@
     </div>
     <ul class="nav navbar-nav">
       <li class="active"><a href="?p=home">Home</a></li>
-      <li><a href="?p=admin">Administrator dashboard</a></li>
-      <li><a href="?p=ajout-article">New article</a></li>
+      <!-- <li><a href="?p=admin">Administrator dashboard</a></li> -->
+      <?= $admin_dashboard_nav ?>
+      <!-- <li><a href="?p=ajout-article">New article</a></li> -->
+      <?= $ajout_article_nav ?>
       <!-- <li><a href="?p=login">Login</a></li> -->
     </ul>
 
@@ -29,7 +35,7 @@
 
     <ul class="nav navbar-nav navbar-right">
       
-    <form class="navbar-form form-inline" method="GET" action="pages/recherche.php">
+    <form class="navbar-form form-inline" method="GET" action="?p=home">
 
     <div class="dropdown form-group">
       <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
@@ -92,7 +98,7 @@
                     <!-- Bouton de recherche -->
     
       <div class="form-group">
-        <input type="text" class="form-control" placeholder="Search" name="recherche_nav">
+        <input type="text" class="form-control" placeholder="Search" name="search">
       </div>
       <button type="submit" class="btn btn-success">Submit</button>
     </form>
