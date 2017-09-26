@@ -1,5 +1,5 @@
 <?php
-include("../database/connexion-bdd.php");
+include("database/connexion-bdd.php");
 $author = (INT)$_POST["type"];
 $article_id = (INT)$_POST["article_admin_id"];
 $title= $_POST['title'];
@@ -21,7 +21,8 @@ try
 {
     $bdd->query($sql_ajout_article);
     echo "Article enregistré avec succès !";
-    ?><br><a href="../index.php"><button class="btn">retour a l'accueil du site</button></a> <?php
+    ?><br><a href="?p=home"><button class="btn">retour a l'accueil du site</button></a> <?php
+    header('refresh:3;url=?p=home');
 }
 catch (Exception $e)
 {
