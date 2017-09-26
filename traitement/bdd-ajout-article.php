@@ -1,10 +1,10 @@
 <?php
 include("database/connexion-bdd.php");
-$author = (INT)$_POST["type"];
-$article_id = (INT)$_POST["article_admin_id"];
-$title= $_POST['title'];
-$content= $_POST['content'];
-$date = $_POST['date'];
+$author = htmlspecialchars((INT)$_POST["type"]);
+$article_id = htmlspecialchars((INT)$_POST["article_admin_id"]);
+$title= htmlspecialchars($_POST['title']);
+$content= htmlspecialchars($_POST['content']);
+$date = htmlspecialchars($_POST['date']);
 // var_dump($author);
 // var_dump($article_id);
 // var_dump($title);
