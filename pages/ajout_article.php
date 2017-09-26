@@ -1,6 +1,6 @@
 <?php include("database/connexion-bdd.php"); ?>
 <h1 class="text-center">Ajouter un Article:</h1>
-<form action="traitement/bdd-ajout-article.php" method="post">
+<form action="?p=bdd-ajout-article" method="post">
 <input type="number" class="hidden" id="article_admin_id" name="article_admin_id" value="1">
 <!-- <input type="number" class="hidden" id="article_type_id" name="article_type_id" value="1"> -->
 <!-- input title -->

@@ -32,6 +32,14 @@ if($p === 'home'){
     include('traitement/bdd-suppression-article.php');
 }if($p === 'markdown'){
     include('pages/markdown.php');
-}$content = ob_get_clean();
-    include('assets/template/default.php');
+}if($p === 'bdd-ajout-article'){
+    include('traitement/bdd-ajout-article.php');
+}if($p === 'edit-article'){
+    include('pages/edit-article.php');
+}if($p === 'bdd-update-article'){
+    include('traitement/bdd-update-article.php');
+}
+$content = ob_get_clean();
+include('assets/template/default.php');
+
 ?>
