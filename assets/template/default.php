@@ -63,6 +63,8 @@
     <!-- <script src="node_modules/bootstrap/dist/js/bootstrap.min.js" ></script> -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="js/app.js"></script>
-
+    
+    <script type="text/javascript" src="../node_modules/markdown/lib/markdown.js"></script>
+    <script type="text/javascript" src="../js/markdown.js"></script>
 </body>
 </html>

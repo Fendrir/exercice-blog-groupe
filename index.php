@@ -31,8 +31,8 @@ if($p === 'home'){
     include('pages/ajout_article.php');
 }if($p === 'bdd-suppression-article'){
     include('traitement/bdd-suppression-article.php');
-}
-$content = ob_get_clean();
-include('assets/template/default.php');
+}if($p === 'markdown'){
+    include('pages/markdown.php');
+}$content = ob_get_clean();
+    include('assets/template/default.php');
 ?>
-
