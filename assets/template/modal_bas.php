@@ -5,25 +5,6 @@
         </div>
         </div>
 
-        <?php
-                if (isset($_POST["valider"])){
-                $pseudo = htmlspecialchars($_POST["login"]);
-                $pwd = htmlspecialchars($_POST["password"]);
-                $sql = sprintf("SELECT * FROM admin WHERE admin_username = '%s' OR admin_password = '%s'", $pseudo, $pwd );
-                $result_sql = $bdd->query($sql);
-                $row = $result_sql->fetch();
-
-                if (!empty($row)){
-                
-                    $_SESSION['identifier'] = $row["admin_username"];
-                    $_SESSION['admin_id'] = $row["admin_id"];
-                    header("Location: ?p=admin");
-                };
-                echo "Identifiant ou mot de passe incorrect";
-            };
-            
-        
-?>
 
 
     </div>
