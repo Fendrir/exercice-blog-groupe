@@ -1,7 +1,4 @@
-
-
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -12,6 +9,7 @@
     <title>Document</title>
 </head>
 <body>
+    
     <header>
     
         <?php
@@ -66,7 +64,8 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="js/app.js"></script>
     
-    <script type="text/javascript" src="../node_modules/markdown/lib/markdown.js"></script>
-    <script type="text/javascript" src="../js/markdown.js"></script>
+    <script type="text/javascript" src="node_modules/markdown/lib/markdown.js"></script>
+    <script type="text/javascript" src="js/markdown_app.js"></script>
+
 </body>
 </html>

@@ -1,8 +1,8 @@
 $("document").ready(function(){
-    var text = $("#text").text();
-    console.log("text");
+    var text = $("#content").text();
+    
     text = markdown.toHTML(text);
-    $("#text").html(text);
+    $("#content").html(text);
 });
 
 
