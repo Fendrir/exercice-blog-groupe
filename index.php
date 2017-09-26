@@ -30,6 +30,8 @@ if($p === 'home'){
     include('pages/ajout_article.php');
 }if($p === 'bdd-suppression-article'){
     include('traitement/bdd-suppression-article.php');
+}if($p === 'markdown'){
+    include('pages/markdown.php');
 }if($p === 'bdd-ajout-article'){
     include('traitement/bdd-ajout-article.php');
 }if($p === 'edit-article'){
@@ -39,5 +41,5 @@ if($p === 'home'){
 }
 $content = ob_get_clean();
 include('assets/template/default.php');
-?>
 
+?>

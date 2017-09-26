@@ -65,24 +65,26 @@ $reponse = $bdd->query($code_sql);
         <th><a href="?p=home&ordre_tri=article_id<?= $url_search_and_tri?>">Numéro de l'article</a></th>
         <th><a href="?p=home&ordre_tri=article_title<?= $url_search_and_tri?>">Title</a></th>
         <th><a href="?p=home&ordre_tri=type_name<?= $url_search_and_tri?>">Type</a></th>
-        <th><a href="?p=home&ordre_tri=article_content<?= $url_search_and_tri?>">Content</a></th>
+        <th ><a href="?p=home&ordre_tri=article_content<?= $url_search_and_tri?>">Content</a></th>
         <th><a href="?p=home&ordre_tri=article_date<?= $url_search_and_tri?>">Date</a></th>
         <th><a href="?p=home&ordre_tri=admin_username<?= $url_search_and_tri?>">Author</a></th>        
       </tr>
     </thead>
+    <tbody  >
 
     <h1 class="text-center page-header">Articles actualité notre super site</h1>
 <?php
 while  ($donnees = $reponse->fetch()){
 ?>
-<p>
-<td><?=$donnees['article_id']?></td>
-<td><?=$donnees['article_title']?></td>
-<td><?=$donnees['type_name']?> </td>
-<td><?=$donnees['article_content']?></td>
-<td><?=$donnees['article_date']?> </td>
-<td><?=$donnees['admin_username']?> </td>
-</tr>
+
+  <tr>
+    <td><?=$donnees['article_id']?></td>
+    <td><?=$donnees['article_title']?></td>
+    <td><?=$donnees['type_name']?> </td>
+    <td id="content"><?=$donnees['article_content']?></td>
+    <td><?=$donnees['article_date']?> </td>
+    <td><?=$donnees['admin_username']?> </td>
+  </tr>
 </tbody>
 
 
