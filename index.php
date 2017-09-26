@@ -10,7 +10,6 @@ if (isset($_SESSION['identifier'])){
     // header("Location: ?p=connexion");
 };
 
-var_dump($_SESSION);
 
 include("database/connexion-bdd.php");
 
